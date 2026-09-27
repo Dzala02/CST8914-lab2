@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Question 2 - CSS</title>
-   <style>
-    .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
-    }
+    <meta charset="UTF-8">
+    <title>Question 2 - CSS</title>
+    <style>
+        /* Real text styled with CSS instead of an image of text */
+        .mainsection h1 {
+            display: inline-block;
+            margin: 0 0 1rem;
+            padding: 30px 35px;
+            background: #ecebd6 url("lab2/backgroundimg.gif") repeat;
+            color: #000;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
 
-    
+        /* Links look like links: underlined */
+        .mainsection a {
+            text-decoration: underline;
+            color: #414040;
+        }
+
+            .mainsection a:hover {
+                color: #000;
+                background-color: #f0f0f0;
+            }
+
+            /* Clear, visible keyboard focus indicator */
+            .mainsection a:focus,
+            .mainsection a:focus-visible {
+                outline: 3px solid #0050b3;
+                outline-offset: 2px;
+                background-color: #fff3a0;
+                color: #000;
+            }
     </style>
 </head>
 <body>
-<div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+    <div class="mainsection">
+        <h1>Shopping categories</h1>
 
-<ul>
-  <li><a href="#">Animals</a></li>
-  <li><a href="#">Computers</a></li>
-  <li><a href="#">Diversity and inclusion</a></li>
-  <li><a href="#">Food</a></li>
-  <li><a href="#">Medicine</a></li>
-  <li><a href="#">Music</a></li>
-</ul>
-</div>    
+        <ul>
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Diversity and inclusion</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Medicine</a></li>
+            <li><a href="#">Music</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>

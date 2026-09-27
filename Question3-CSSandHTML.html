@@ -1,40 +1,46 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Question 3- CSS & HTML</title>
-  <style>
-    .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
+    <meta charset="UTF-8">
+    <title>Question 3 - CSS &amp; HTML</title>
+    <style>
+        .button {
+            background-color: #81C784; /* black on #81C784 = 10.44:1 (passes AA & AAA) */
+            border: none;
+            color: #000000;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
 
-    body {
-      padding: 20px;
-      background-color: #2f2f2f;
-    }
+            .button:focus-visible {
+                outline: 3px solid #ffffff;
+                outline-offset: 3px;
+            }
 
-    h1, h2, p {
-      color: black;
-    }
-  </style>
+        body {
+            padding: 20px;
+            background-color: #2f2f2f;
+        }
+
+        h1, h2, p {
+            color: #ffffff; /* white on #2f2f2f = 13.39:1 */
+        }
+    </style>
 </head>
 
 <body>
-  
-  <h1>HTML made Easy</h1>
 
-  <p>What causes errors in HTML?</p>
+    <h1>HTML made Easy</h1>
 
-  <div class="button">Submit answers</div>
+    <p>What causes errors in HTML?</p>
+
+    <button type="submit" class="button">Submit answers</button>
 
 </body>
 
